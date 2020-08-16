@@ -1,21 +1,30 @@
 {
-"lines": [{
-	"line1": [
-	"Hello, my name is chad",
-	"Damn.. My muscles ache",
-	"Let's work out! Nothin' beats a good workout!"
-	],
-	"line2" :[
-	"But damn bro, you're skin an' bones",
-	"It ain't healthy you know"
-	]
-}],
+	"lines": [{
+		"line1": [
+			"Hello, my name is chad",
+			"Damn.. My muscles ache",
+			"Let's work out! Nothin' beats a good workout!"
+		],
+		"line2": [
+			"But damn bro, you're skin an' bones",
+			"It ain't healthy you know"
+		]
+	}],
 
-	"answers1": [{
-
-	"answer1" : {"line": "Yeah sure", "num" : 3},
-	"answer2" : {"line": "I'll pass", "num" : 0},
-	"answer3" : {"line": "Sorry mate, next time", "num" : 1},
-
-	}]	
+	"answers": [{
+		"answers1": [{
+			"answer1": {
+				"line": "Yeah sure",
+				"num": 3
+			},
+			"answer2": {
+				"line": "I'll pass",
+				"num": 0
+			},
+			"answer3": {
+				"line": "Sorry mate, next time",
+				"num": 1
+			}
+		}]
+	}]
 }
