@@ -1,0 +1,21 @@
+{
+"lines": [{
+	"line1": [
+	"Hello, my name is chad",
+	"Damn.. My muscles ache",
+	"Let's work out! Nothin' beats a good workout!"
+	],
+	"line2" :[
+	"But damn bro, you're skin an' bones",
+	"It ain't healthy you know"
+	]
+}],
+
+	"answers": [{
+
+	"answer1" : "Yeah, sure",
+	"answer2" : "I'll pass",
+	"answer3" : "Sorry, next time",
+
+	}]	
+}
