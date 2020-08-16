@@ -1,0 +1,82 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
+public class DialogueSystem : MonoBehaviour
+{
+    [TextArea(1, 3)]
+
+    public List<string> speech; // Character's speech
+
+    public TextMeshProUGUI textMesh, nameMesh; // Text meshes
+
+    int index = 0; 
+
+    public string charName;
+
+    public TextAsset dialogue; // The Json file
+
+    private DialogueItem[] dialogueItems;
+    public AnswerInfo[] answers;
+
+    void Start()
+    {
+        nameMesh.text = charName;
+
+        dialogueItems = JsonUtility.FromJson<Dialogue>(dialogue.text).lines; // Import the lines from the Json file
+        answers = JsonUtility.FromJson<Dialogue>(dialorogue.text).answers; // Import the answers from the Json file
+
+        foreach (DialogueItem dia in dialogueItems)
+        {
+            speech.AddRange(dia.line1);
+        }
+
+        foreach(AnswerInfo ans in answers)
+        {
+            Debug.Log(ans.answer1);
+        }
+    }
+
+
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown("e")) // Get the next line
+        {
+            index++;
+        }
+
+        textMesh.text = speech[index];
+
+        if (index == speech.ToArray().Length - 1) // Here it is time to answer
+        {
+
+        }
+    }
+}
+
+[System.Serializable]
+public class Dialogue
+{
+    public DialogueItem[] lines;
+    public AnswerInfo[] answers;
+}
+
+[System.Serializable]
+public class DialogueItem
+{
+    public string[] line1;
+    public string[] line2;
+    public string[] line3;
+    //public string answer;
+}
+
+[System.Serializable]
+public class AnswerInfo
+{
+    public int answer1;
+    public int answer2;
+}
