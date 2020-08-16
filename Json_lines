@@ -11,11 +11,11 @@
 	]
 }],
 
-	"answers": [{
+	"answers1": [{
 
-	"answer1" : "Yeah, sure",
-	"answer2" : "I'll pass",
-	"answer3" : "Sorry, next time",
+	"answer1" : {"line": "Yeah sure", "num" : 3},
+	"answer2" : {"line": "I'll pass", "num" : 0},
+	"answer3" : {"line": "Sorry mate, next time", "num" : 1},
 
 	}]	
 }
