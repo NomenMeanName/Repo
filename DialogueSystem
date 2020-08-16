@@ -26,7 +26,7 @@ public class DialogueSystem : MonoBehaviour
         nameMesh.text = charName;
 
         dialogueItems = JsonUtility.FromJson<Dialogue>(dialogue.text).lines; // Import the lines from the Json file
-        answers = JsonUtility.FromJson<Dialogue>(dialorogue.text).answers; // Import the answers from the Json file
+        answers = JsonUtility.FromJson<Dialogue>(dialogue.text).answers; // Import the answers from the Json file
 
         foreach (DialogueItem dia in dialogueItems)
         {
